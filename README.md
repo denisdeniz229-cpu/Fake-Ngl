@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fake NGL - Anonim Mesajlaşma Platformu
 
 Instagram'ın NGL uygulamasına benzer bir anonim mesajlaşma platformu. Kullanıcılar anonim mesaj gönderdiklerini düşünürken, admin panelinden gönderen kişinin Instagram kullanıcı adı ve mesajları görüntülenebilir.
@@ -70,3 +71,7 @@ Admin panelinden:
 - Instagram kullanıcı adı URL parametresi veya prompt ile alınır
 - Tüm mesajlar ve yazım geçmişi veritabanında saklanır
 
+=======
+# Fake-Ngl
+Ngl but fake
+>>>>>>> 1eb21ffb06d4d0dcee848ef3bda205669d2c0db2
