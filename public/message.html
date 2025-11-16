@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">NGL</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="message-container">
+        <div class="message-card">
+            <div class="card-header">
+                <div class="profile-section">
+                    <img id="profileImage" src="" alt="Profile" class="profile-image">
+                    <div class="profile-info">
+                        <div class="username" id="username">@kullanici</div>
+                        <div class="prompt">bana anonim olarak mesajlar gönder!</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-body">
+                <div class="question-display" id="questionDisplay">
+                    <div class="dice-icon" id="diceBtn">🎲</div>
+                </div>
+                
+                <div class="message-input-area">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Mesajınızı yazın..."
+                        rows="4"
+                    ></textarea>
+                    <div class="suggested-questions" id="suggestedQuestions"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <span class="lock-icon">🔒</span>
+            <span>anonim soru ve cevap</span>
+        </div>
+
+        <div class="footer-stats">
+            <span class="hand-icon">👆</span>
+            <span id="statsText">0 arkadaşlar az önce bastı</span>
+        </div>
+
+        <button id="sendBtn" class="btn-send" style="display: none;">Gönder!</button>
+        <button id="getMessagesBtn" class="btn-primary">Kendi mesajlarını al!</button>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <button class="back-btn" id="backBtn">←</button>
+            <div class="success-icon">✓</div>
+            <h2>Gönderildi!</h2>
+            <div class="stats-text">
+                <span class="hand-icon">👆</span>
+                <span id="modalStats">0 arkadaşlar az önce bastı</span>
+            </div>
+            <button class="btn-primary">Kendi mesajlarını al!</button>
+            <a href="#" id="sendAnotherBtn" class="send-another">Başka bir mesaj gönder</a>
+        </div>
+    </div>
+
+    <script src="message.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGL</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="setup-card">
+            <h1>Bağlantı Oluştur</h1>
+            
+            <div class="form-group">
+                <label for="profileImage">
+                    <div class="image-upload-area">
+                        <div class="image-preview" id="imagePreview">
+                            <span>Görsel Yükle</span>
+                        </div>
+                        <input type="file" id="profileImage" accept="image/*" hidden>
+                    </div>
+                    <p class="help-text">Bu görsel profil fotoğrafı olarak kullanılacak ve yuvarlak şekilde gösterilecek.</p>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı</label>
+                <input type="text" id="username" placeholder="örn: defnw_17" required>
+                <p class="help-text">Bu kullanıcı adı bağlantı URL'inde ve profil sayfasında görünecek (örn: ngl.link/defnw_17)</p>
+            </div>
+
+            <button id="createLinkBtn" class="btn-primary">Bağlantı Oluştur</button>
+            
+            <div id="result" class="result-message"></div>
+        </div>
+    </div>
+
+    <script src="setup.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - NGL</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-card">
+            <h1>Admin Girişi</h1>
+            <div class="form-group">
+                <label for="adminUsername">Kullanıcı Adı</label>
+                <input type="text" id="adminUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="adminPassword">Şifre</label>
+                <input type="password" id="adminPassword" required>
+            </div>
+            <button id="loginBtn" class="btn-primary">Giriş Yap</button>
+            <div id="loginError" class="error-message"></div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel" style="display: none;">
+        <div class="admin-header">
+            <h1>Admin Panel</h1>
+            <button id="logoutBtn" class="btn-secondary">Çıkış</button>
+        </div>
+
+        <div class="admin-content">
+            <div class="links-section">
+                <h2>Bağlantılar</h2>
+                <div id="linksList" class="links-list"></div>
+            </div>
+
+            <div class="messages-section">
+                <h2>Mesajlar</h2>
+                <div id="messagesList" class="messages-list">
+                    <p class="empty-state">Bir bağlantı seçin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
